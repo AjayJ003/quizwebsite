@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    font-family: "Sofia Sans Condensed", "sans-serif";
+}
+
+body{
+    background-color: #d0f2ee;
+}
+
+.top_bar {
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+}
+
+#search_bar {
+    position: absolute;
+    left: 35%;
+
+    width: 300px;
+    height: 25px;
+    margin-left: auto;
+}
+
+#search_box{
+    position: relative;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.suggestions{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#suggestions_box{
+    display: none;
+}
+
+#suggestions_box.active{
+    display: block;
+    background-color: #fff;
+    border: solid 2px black;
+}
+
+#suggestions_box.active ul{
+    padding: 0;
+    margin: 0;
+}
+
+#suggestions_box.active li{
+    color: black;
+    list-style: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+#suggestions_box.active li:hover{
+    background-color:#b6aeb9;
+    border: solid 1px black
+}
+
+#suggestions_box.active div{
+    border: solid 1px black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#suggestions_box.active h4{
+    margin: 0;
+}
+
+#suggestions_box.active p{
+    margin: 5px 0 5px 0;
+}
+
+#search-icon{
+    position: relative;
+    margin: 3px 0 3px 0;
+    width: 30px;
+    height: 25px;
+}
+
+#search-icon:hover{
+    cursor: pointer;
+}
+
+.sidebar {
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    
+}
+
+.content {
+    margin-left: 220px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#display-box{
+    position: relative;
+    width: auto;
+    height: 300px;
+}
